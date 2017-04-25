@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "498698718898",
+    "firebase_url": "https://t-rate.firebaseio.com",
+    "project_id": "t-rate",
+    "storage_bucket": "t-rate.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:498698718898:android:c88861cdd3138dd7",
+        "android_client_info": {
+          "package_name": "com.example.t_rate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "498698718898-dmgm6b4o40q8fuhsgnjtirq1952kmvn5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-imtFWUe3LpMU8E8QixZNkJkd8IzHhJ8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
