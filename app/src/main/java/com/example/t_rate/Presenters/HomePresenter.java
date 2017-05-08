@@ -3,15 +3,18 @@ package com.example.t_rate.Presenters;
 import android.databinding.DataBindingUtil;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.widget.ArrayAdapter;
+import android.widget.ListAdapter;
 
 import com.example.t_rate.Activities.HomeActivity;
 import com.example.t_rate.Adapters.HomeAdapter;
-import com.example.t_rate.Models.HomeModel;
 import com.example.t_rate.Models.Teacher;
 import com.example.t_rate.R;
 import com.example.t_rate.databinding.ActivityHomeBinding;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 /**
  * Created by pigmanrocker on 24-4-17.
@@ -19,23 +22,19 @@ import java.util.ArrayList;
 
 public class HomePresenter {
 
-    private ActivityHomeBinding binding;
     private HomeActivity homeActivity;
-    private RecyclerView recyclerView;
     private HomeAdapter adapter;
-    private HomeModel model;
 
     public HomePresenter(HomeActivity homeActivity){
         this.homeActivity = homeActivity;
         adapter = new HomeAdapter();
-        binding = DataBindingUtil.setContentView(homeActivity, R.layout.activity_home);
-        binding.setPresenter(this);
-        binding.setModel(model);
-        recyclerView = binding.homeRecycler;
-        recyclerView.setLayoutManager(new LinearLayoutManager(homeActivity.getBaseContext()));
-        recyclerView.setAdapter(adapter);
+        homeActivity.setRecyclerAdapter(adapter);
 
         testRecyclerView();
+        setupDrawer();
+    }
+
+    public void setupDrawer(){
     }
 
     public void testRecyclerView(){
@@ -51,6 +50,19 @@ public class HomePresenter {
         teachers.add(new Teacher(1, "Rene Laan", (float) 2.7));
         teachers.add(new Teacher(1, "Johan ten Brink", (float) 4.2));
         teachers.add(new Teacher(1, "Henk Bakker", (float) 5.0));
+
+        Collections.sort(teachers, new Comparator<Teacher>() {
+            @Override
+            public int compare(Teacher teacher1, Teacher teacher2) {
+                if (teacher1.getTotalRating() < teacher2.getTotalRating()){
+                    return 1;
+                } else if (teacher1.getTotalRating() > teacher2.getTotalRating()){
+                    return -1;
+                } else {
+                    return 0;
+                }
+            }
+        });
 
         adapter.setTeachers(teachers);
         adapter.notifyDataSetChanged();

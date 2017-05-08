@@ -2,17 +2,31 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
     <data>
         <variable name="presenter" type="com.example.t_rate.Presenters.HomePresenter" />
-        <variable name="model" type="com.example.t_rate.Models.HomeModel" />
     </data>
 
-    <LinearLayout
+    <android.support.v4.widget.DrawerLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:id="@+id/drawer_layout">
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/homeRecycler"
+        <LinearLayout
+            android:id="@+id/content_frame"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent">
 
-    </LinearLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/homeRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <include
+            layout="@layout/layout_drawer"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:id="@+id/left_drawer"/>
+
+    </android.support.v4.widget.DrawerLayout>
 </layout>
