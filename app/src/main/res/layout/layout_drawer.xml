@@ -4,7 +4,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/drawer_bg"
+        android:background="@color/colorPrimaryLight"
         android:orientation="vertical">
 
         <LinearLayout
@@ -31,7 +31,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:textSize="20sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/drawer_text"
                     android:text="@string/profile"/>
 
             </LinearLayout>
@@ -68,7 +68,7 @@
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
                     android:textSize="20sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/drawer_text"
                     android:text="@string/home"/>
 
             </LinearLayout>
@@ -105,7 +105,7 @@
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
                     android:textSize="20sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/drawer_text"
                     android:text="@string/search"/>
 
             </LinearLayout>
@@ -152,7 +152,7 @@
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
                     android:textSize="20sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/drawer_text"
                     android:text="@string/contact"/>
 
             </LinearLayout>
@@ -189,7 +189,7 @@
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
                     android:textSize="20sp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/drawer_text"
                     android:text="@string/settings"/>
 
             </LinearLayout>

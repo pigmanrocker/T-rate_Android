@@ -31,10 +31,6 @@ public class HomePresenter {
         homeActivity.setRecyclerAdapter(adapter);
 
         testRecyclerView();
-        setupDrawer();
-    }
-
-    public void setupDrawer(){
     }
 
     public void testRecyclerView(){
