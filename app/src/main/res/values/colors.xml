@@ -9,4 +9,5 @@
     <color name="grey">#888888</color>
     <color name="button_bg">#5CB85C</color>
     <color name="drawer_text">#000000</color>
+    <color name="error">#FF0000</color>
 </resources>

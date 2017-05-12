@@ -1,16 +1,8 @@
 package com.example.t_rate.Presenters;
 
-import android.databinding.DataBindingUtil;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.widget.ArrayAdapter;
-import android.widget.ListAdapter;
-
 import com.example.t_rate.Activities.HomeActivity;
 import com.example.t_rate.Adapters.HomeAdapter;
 import com.example.t_rate.Models.Teacher;
-import com.example.t_rate.R;
-import com.example.t_rate.databinding.ActivityHomeBinding;
 
 import java.util.ArrayList;
 import java.util.Collections;
