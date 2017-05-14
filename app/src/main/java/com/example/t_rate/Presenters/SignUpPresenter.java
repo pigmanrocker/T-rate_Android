@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.widget.Toast;
 
+import com.example.t_rate.Activities.LoginActivity;
 import com.example.t_rate.Activities.SignUpActivity;
 import com.example.t_rate.Activities.SignedUpActivity;
 import com.example.t_rate.CustomUtils.Utilities;
@@ -84,6 +85,7 @@ public class SignUpPresenter {
     }
 
     public void goToSignIn(){
-        // TODO: 5/10/17 switch to login screen    
+        Intent intent = new Intent(activity.getBaseContext(), LoginActivity.class);
+        activity.startActivity(intent);
     }
 }
