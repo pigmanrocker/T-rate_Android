@@ -16,6 +16,7 @@
 
     <!-- SIGN UP & SIGN IN -->
     <string name="header_sign_up">Create Account</string>
+    <string name="header_sign_in">Login</string>
     <string name="hint_email">Email</string>
     <string name="hint_password">Password</string>
     <string name="hint_confirm_password">Confirm Password</string>
@@ -29,4 +30,5 @@
     <string name="email_not_stenden">Your email is not a valid Stenden email</string>
     <string name="password_invalid">Password not strong enough</string>
     <string name="password_not_match">Your passwords do not match</string>
+    <string name="combo_wrong">Email and password combo unknown</string>
 </resources>
